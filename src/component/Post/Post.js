@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
-import { addPost } from '../../actions/postAction';
+import { addPost } from '../../actions/postActions';
 import PropTypes from 'prop-types';
 
 import uuid from 'uuid'
