@@ -5,11 +5,12 @@ import store from './store';
 
 import SignIn from './component/SignIn/SignIn';
 import SignUp from './component/SignUp/SignUp';
-import CardList from './component/Homepage/CardList';
+import Homepage from './component/Homepage/Homepage';
 
 import './reset.css';
 import 'tachyons';
 import './App.css';
+
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
       <Router>
         <div>
           <Switch>
-            <Route exact path='/' component={CardList} />
+            <Route exact path='/' component={Homepage} />
             <Route exact path='/signin' component={SignIn} />
             <Route exact path='/signup' component={SignUp} />
 
