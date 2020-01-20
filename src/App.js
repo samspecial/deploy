@@ -6,6 +6,7 @@ import store from './store';
 import SignIn from './component/SignIn/SignIn';
 import SignUp from './component/SignUp/SignUp';
 import Homepage from './component/Homepage/Homepage';
+import Footer from './Footer';
 
 import './reset.css';
 import 'tachyons';
@@ -22,9 +23,8 @@ function App() {
             <Route exact path='/' component={Homepage} />
             <Route exact path='/signin' component={SignIn} />
             <Route exact path='/signup' component={SignUp} />
-
-            <h2>Glad to be back again</h2>
           </Switch>
+          <Footer />
         </div>
       </Router>
     </Provider>
