@@ -8,6 +8,12 @@
   text-align: center;
 }
 
+.navbar{
+  background-color:#e8e2e2;
+}
+.sign-in{
+  margin: 0 auto;
+}
 /* .cover {
   background-size: cover;
   background: url('./img/colabo.png') no-repeat;
