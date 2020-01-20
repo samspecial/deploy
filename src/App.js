@@ -6,6 +6,7 @@ import store from './store';
 import SignIn from './component/SignIn/SignIn';
 import SignUp from './component/SignUp/SignUp';
 import Homepage from './component/Homepage/Homepage';
+import Post from './component/Post/Post';
 import Footer from './Footer';
 
 import './reset.css';
@@ -23,6 +24,7 @@ function App() {
             <Route exact path='/' component={Homepage} />
             <Route exact path='/signin' component={SignIn} />
             <Route exact path='/signup' component={SignUp} />
+            <Route exact path='/post' component={Post} />
           </Switch>
           <Footer />
         </div>
