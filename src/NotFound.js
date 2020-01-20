@@ -5,7 +5,7 @@ import error from './assets/error.png'
 export default function NotFound() {
     return (
         <div>
-            <img className="" src={error} alt="Oops, Not page found" />
+            <img className="" src={error} alt="Oops, page not found" />
             <p>You can check <Link className="link" to="/signup">here.</Link></p>
         </div>
     )
