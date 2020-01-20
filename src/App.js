@@ -8,6 +8,7 @@ import SignUp from './component/SignUp/SignUp';
 import Homepage from './component/Homepage/Homepage';
 import Contact from './component/Contact/Contact';
 import NotFound from './NotFound';
+import Post from './component/Post/Post';
 import Footer from './Footer';
 
 import './reset.css';
@@ -28,6 +29,7 @@ function App() {
             <Route exact path='/signup' component={SignUp} />
             <Route exact path='/contact' component={Contact} />
             <Route exact path='*' component={NotFound} />
+            <Route exact path='/post' component={Post} />
           </Switch>
           <Footer />
         </div>
