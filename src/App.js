@@ -1,13 +1,33 @@
 import React from 'react';
-import './reset.css'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './store';
+
+import SignIn from './component/SignIn/SignIn';
+import SignUp from './component/SignUp/SignUp';
+import Homepage from './component/Homepage/Homepage';
+import Footer from './Footer';
+
+import './reset.css';
+import 'tachyons';
 import './App.css';
+
+
 
 function App() {
   return (
-    <div>
-      <h1>HelloWorld</h1>
-      <h2>Glad to be back again</h2>
-    </div>
+    <Provider store={store}>
+      <Router>
+        <div>
+          <Switch>
+            <Route exact path='/' component={Homepage} />
+            <Route exact path='/signin' component={SignIn} />
+            <Route exact path='/signup' component={SignUp} />
+          </Switch>
+          <Footer />
+        </div>
+      </Router>
+    </Provider>
   )
 }
 
