@@ -70,7 +70,7 @@ export default class SignIn extends Component {
             <React.Fragment>
                 <NavBar />
                 <section className="sign-in">
-                    <form onSubmit={this.onSubmit} className="shadow-5" noValidate action="sign-in_submit" method="post" acceptCharset="utf-8">
+                    <form onSubmit={this.onSubmit} className="shadow-5 align" noValidate action="sign-in_submit" method="post" acceptCharset="utf-8">
                         <h1>{'Welcome Back'}</h1>
                         <div>
                             <div className="tl">

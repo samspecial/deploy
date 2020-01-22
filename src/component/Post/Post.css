@@ -1,6 +1,7 @@
 .post-container{
     background:#fff;
 }
+
 .post-head{
     background:rgb(206, 189, 189);
     padding: 30px 20px;
@@ -12,25 +13,31 @@
     height:80vh;
     overflow: hidden;
 }
+
 input:focus, textarea:focus{
     border:1px solid orange;
     outline:none;
 }
+
 h3.post{
     font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight:bold;
     text-transform: capitalize;
 }
+
 h3.post, p.paragraph{
     margin:20px auto;
 }
+
 p{
     margin-bottom:20px;
 }
+
 .bg{
     background: linear-gradient(to top,#F3B997,royalblue);
 }
+
 input[type="file"]{
     border:none;
     background:transparent;

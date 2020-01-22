@@ -4,18 +4,16 @@ import { connect } from 'react-redux';
 import { addPost } from '../../actions/postActions';
 import PropTypes from 'prop-types';
 
-import uuid from 'uuid'
+import uuid from 'uuid';
 import './Post.css'
 
 class Post extends Component {
-    constructor() {
-        super()
-        this.state = {
-            title: "",
-            article: "",
-            image: ""
-        }
+    state = {
+        title: "",
+        article: "",
+        image: ""
     }
+
 
     onSubmit = (e) => {
 
@@ -59,7 +57,7 @@ class Post extends Component {
         return (
 
             <section className="">
-                <form onSubmit={this.onSubmit} className="bg measure shadow-5" action="article-post" method="post" acceptCharset="utf-8" encType="multipart/form-data">
+                <form onSubmit={this.onSubmit} className="bg measure shadow-5">
                     <h1>Create Post</h1>
                     <div>
                         <div className="tl">

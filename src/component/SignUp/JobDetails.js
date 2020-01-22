@@ -26,7 +26,7 @@ export default class JobDetails extends Component {
             <React.Fragment>
                 <NavBar />
                 <section className="sign-up">
-                    <form onSubmit={this.onSubmitDetails} className="continue shadow-5 align" action="sign-up_submit" method="post" noValidate acceptCharset="utf-8">
+                    <form onSubmit={this.onSubmitDetails} className="shadow-5 align" action="sign-up_submit" method="post" noValidate acceptCharset="utf-8">
                         <h1>Job Details</h1>
                         <div>
                             <div className="tl"><label htmlFor="jobRole">Job Role</label>

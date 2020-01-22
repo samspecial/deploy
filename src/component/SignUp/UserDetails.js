@@ -30,7 +30,7 @@ export default class UserDetails extends Component {
             <React.Fragment>
                 <NavBar />
                 <section className="sign-up">
-                    <form className="continue shadow-5 align" noValidate acceptCharset="utf-8">
+                    <form className="shadow-5 align" noValidate acceptCharset="utf-8">
                         <div>
                             <h1>User Details</h1>
                             <div className="tl"><label htmlFor="email">Email</label>

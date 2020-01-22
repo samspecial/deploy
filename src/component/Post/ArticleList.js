@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { getPost } from '../../actions/postAction';
+import { getPost } from '../../actions/postActions';
 import { Div } from './styles';
 import PropTypes from 'prop-types';
 
@@ -14,7 +14,6 @@ class ArticleList extends Component {
     render() {
         const { postValue } = this.props;
         return (
-
             <Div>
                 {postValue.map(post => (
                     <SinglePost title={post.title} article={post.article} key={post.id}
@@ -23,7 +22,6 @@ class ArticleList extends Component {
                 ))}
 
             </Div>
-
         )
     }
 }

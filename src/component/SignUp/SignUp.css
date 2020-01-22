@@ -1,5 +1,4 @@
-
-h1{
+    h1{
 
     font-size:24px;
     margin-bottom:20px;
@@ -98,7 +97,7 @@ h1{
         padding:40px 20px; 
         background-color: white;
     }
-    
+   
     .continue{
         transform-origin:left;
         animation: move .3s ease forwards;
@@ -127,7 +126,7 @@ h1{
         }
         h1{
             font-size: 28px;
-        }
+        }   
     }
     
     @media only screen and (min-width: 769px) {
@@ -140,4 +139,4 @@ h1{
        h1{
         font-size:32px;
        }
-        } 
+     } 

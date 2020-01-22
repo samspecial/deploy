@@ -54,6 +54,4 @@ flex-wrap: wrap;
 justify-content: flex-start;
 align-items:space-around;
 background-color: #3a5382;
-
-
 `

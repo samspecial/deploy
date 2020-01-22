@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { deletePost } from '../../actions/postAction';
+import { deletePost } from '../../actions/postActions';
 import { Section, Article } from './styles';
 
-import Comment from './Comment';
-
-import { FaPencilAlt, FaTimes } from 'react-icons/fa';
+import { FaTrashAlt, FaPencilAlt } from 'react-icons/fa';
 
 class SinglePost extends Component {
     constructor() {
@@ -53,9 +51,8 @@ class SinglePost extends Component {
                     <Article>
                         <h2>{title}</h2>
                         <p>{article.length > 100 ? shortened : article}</p>
-                        <span><FaTimes onClick={this.onDeleteClick.bind(this, id)} /><Link to={`/feed/edit/${id}`}> <FaPencilAlt /></Link></span>
+                        <span><FaTrashAlt onClick={this.onDeleteClick.bind(this, id)} /><Link to={`/feed/edit/${id}`}> <FaPencilAlt /></Link></span>
                     </Article>
-                    <Comment />
                 </Section>
 
             </React.Fragment>

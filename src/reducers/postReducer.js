@@ -5,21 +5,22 @@ const initialState = {
 }
 
 export default function (state = initialState, action) {
-    switch (action.types) {
+    switch (action.type) {
         case GET_POST:
             return {
                 ...state
-            }
+            };
         case ADD_POST:
             return {
                 ...state,
                 articleData: [action.payload, ...state.articleData]
-            }
+            };
         case DELETE_POST:
             return {
                 articleData: state.articleData.filter(article => article.id !== action.payload)
-            }
+            };
         default:
             return state
     }
 }
+

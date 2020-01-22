@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-import { FaTimes, FaPlus, FaPencilAlt } from 'react-icons/fa';
+import { FaTrashAlt, FaPlus, FaPencilAlt } from 'react-icons/fa';
 
 export default class Comment extends Component {
     constructor() {
@@ -21,7 +21,7 @@ export default class Comment extends Component {
         return (
             <React.Fragment>
                 <textarea value={comment} name="comment" onChange={this.changeComment} placeholder="Your comment goes here"></textarea>
-                <span><Link to="/"><FaTimes /></Link> <Link to="/"><FaPlus /></Link><Link to="/"><FaPencilAlt /></Link></span>
+                <span><Link to="/"><FaTrashAlt /></Link> <Link to="/"><FaPlus /></Link><Link to="/"><FaPencilAlt /></Link></span>
             </React.Fragment>
         )
     }
