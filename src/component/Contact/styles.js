@@ -70,7 +70,7 @@ flex-direction:column;
 
 input.input{
     width:100%;
-    height: 30px;
+    height: 100%;
     color:#3a5382;
     padding-top: 20px;
     border: none;
